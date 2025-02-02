@@ -9,7 +9,7 @@ const Header = () => {
       {/* Navigation Links */}
       <nav className="flex gap-6">
         <a
-          href="https://github.com/sangam5756"
+          href="https://github.com/ParmS-Musale"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400 transition"
@@ -17,7 +17,7 @@ const Header = () => {
           GitHub
         </a>
         <a
-          href="https://sangammundhe.site"
+          href="https://parms-portfolio.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400 transition"
