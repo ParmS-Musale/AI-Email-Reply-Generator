@@ -1,0 +1,1 @@
+export const backendUrl = 'https://ai-coder-cogm.onrender.com';
