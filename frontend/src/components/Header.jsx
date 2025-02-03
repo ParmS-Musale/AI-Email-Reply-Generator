@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-pink-900 fixed top-0 right-0 left-0 text-white py-4 px-6 flex justify-between items-center shadow-md">
+    <header className="bg-stone-900 fixed top-0 right-0 left-0 text-white py-4 px-6 flex justify-between items-center shadow-md">
       {/* Logo */}
       <h1 className="text-2xl font-bold">EzyReply</h1>
 
