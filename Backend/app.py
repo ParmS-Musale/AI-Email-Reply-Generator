@@ -47,6 +47,12 @@ def generate_reply():
 
     return jsonify({"reply": ai_reply})
 
+#  route
+@app.route('/', methods=['GET'])
+def hello():
+    return jsonify({"message": "Hello, World!"})
+
+
 # # Run app
 # if __name__ == "__main__":
 #     app.run(host="0.0.0.0", port=5000)
