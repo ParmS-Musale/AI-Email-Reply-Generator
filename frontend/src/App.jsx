@@ -14,7 +14,7 @@ function App() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/generate-reply",
+        "https://ezyreply22.onrender.com/generate-reply",
         { email }
       );
       setReply(response.data.reply);
