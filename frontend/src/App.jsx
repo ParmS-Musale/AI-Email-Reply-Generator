@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "./components/Header";
 import { backendUrl } from "./utils/constants";
+import { AiOutlineLoading } from "react-icons/ai";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -14,10 +15,9 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post(
-        backendUrl +"/generate-reply",
-        { email }
-      );
+      const response = await axios.post(backendUrl + "/generate-reply", {
+        email,
+      });
       setReply(response.data.reply);
     } catch (error) {
       console.error("Error generating reply:", error);
@@ -52,7 +52,11 @@ function App() {
                 }`}
                 disabled={loading}
               >
-                {loading ? "Generating..." : "Generate Reply"}
+                {loading ? (
+                  <AiOutlineLoading className="animate-spin text-center" />
+                ) : (
+                  "Generate Reply"
+                )}
               </button>
             </div>
           </form>
