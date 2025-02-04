@@ -1,1 +1,1 @@
-export const backendUrl = 'https://ai-coder-cogm.onrender.com';
+export const backendUrl = 'https://ezyreply22.onrender.com';

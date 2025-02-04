@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Header from "./components/Header";
+import { backendUrl } from "./utils/constants";
 
 function App() {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ function App() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://ezyreply22.onrender.com/generate-reply",
+        backendUrl +"/generate-reply",
         { email }
       );
       setReply(response.data.reply);
