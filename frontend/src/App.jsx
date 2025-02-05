@@ -45,7 +45,7 @@ function App() {
               />
               <button
                 type="submit"
-                className={`w-full py-3 rounded-lg text-white font-semibold transition-all ${
+                className={`w-full py-3 rounded-lg text-white font-semibold transition-all flex justify-center items-center ${
                   loading
                     ? "bg-gray-400 cursor-not-allowed"
                     : "bg-blue-600 hover:bg-blue-700"
@@ -53,7 +53,9 @@ function App() {
                 disabled={loading}
               >
                 {loading ? (
-                  <AiOutlineLoading className="animate-spin text-center" />
+                  <div className="flex items-center justify-center">
+                    <AiOutlineLoading className="animate-spin text-2xl" />
+                  </div>
                 ) : (
                   "Generate Reply"
                 )}
